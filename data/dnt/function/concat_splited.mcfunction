@@ -15,4 +15,3 @@ function dnt:private/concat/get_max_layer
 function dnt:private/concat/main
 scoreboard objectives remove calc.dnt
 return 1
-
