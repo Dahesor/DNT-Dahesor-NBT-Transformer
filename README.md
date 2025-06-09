@@ -3,7 +3,7 @@
 This is a library that provides a couple tools to operate on snbt.
 
 * **`function dnt:concat`**:\
-    Takes the a list of strings from `storage dnt:ram in`, and output the contacted string in `storage dnt:ram out`\
+    Takes a list of strings from `storage dnt:ram in`, and output the contacted string in `storage dnt:ram out`\
     This will handles all the escape characters correctly, so `\`, `'`, or`"` will be contacted correctly.
 
 
