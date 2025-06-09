@@ -4,7 +4,7 @@ This is a library that provides a couple tools to operate on snbt.
 
 * **`function dnt:concat`**:\
     Takes a list of strings from `storage dnt:ram in`, and output the contacted string in `storage dnt:ram out`\
-    This will handles all the escape characters correctly, so `\`, `'`, or`"` will be contacted correctly.
+    This will handle all the escape characters correctly, so `\`, `'`, or`"` will be contacted correctly.
 
 
 * **`function dnt:concat_splited`**:\
@@ -22,7 +22,8 @@ This is a library that provides a couple tools to operate on snbt.
 
 
 * **`function dnt:to_json`**:\
-    Takes in a nbt compound or list and convert this structure into JSON, stored as a string in `storage dnt:ram out`. Escapes/newlines/strange key names are all accounted. `0b` and `1b` will be written as `true` and `false`.
+    Takes in a nbt compound or list and convert this structure into JSON, stored as a string in `storage dnt:ram out`. Escapes/newlines/strange key names are all accounted. `0b` and `1b` will be written as `true` and `false`.\
+    You should be aware that this is done by reading the string char by char. You may need to adjust `maxCommandChainLength` for super long nbt.
 
 **Example**:
 
