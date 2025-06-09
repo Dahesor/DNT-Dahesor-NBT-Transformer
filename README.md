@@ -27,7 +27,7 @@ This is a library that provides a couple tools to operate on snbt.
 **Example**:
 
 Input:
-```
+```mcfunction
 {equipment:{mainhand:{id:"diamond",components:{"minecraft:item_name":{text:"what\"\"''ha>?",italic:true},"!attribute_modifiers":{},custom_data:{'Cool"\'\\Name':Yeah...}}}}}
 ```
 Output:
