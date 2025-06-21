@@ -24,10 +24,12 @@ dispatch minecraft:storage["dnt:ram"] to struct{
         escape?: string,
     },
     temp?: any,
+    holder?: any,
     sys?: struct{
         version?: int,
         VersionName?: string,
         MCVersionRange?: string,
         pong__?: boolean
-    }
+    },
+    args?: any,
 }
