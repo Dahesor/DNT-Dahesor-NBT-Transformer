@@ -3,7 +3,7 @@
 ##    storage dnt:ram arg
 ## Output:
 ##    storage dnt:ram out
-## This function removes all new line characters from the input list, then concat it.
+## This function removes all instances of char stored in arg from the input list, then concat it.
 
 execute unless data storage dnt:ram in run return run function dnt:private/snbt/no_input
 execute unless data storage dnt:ram args[0] run return run function dnt:private/snbt/no_input

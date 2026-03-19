@@ -5,11 +5,9 @@
 ## This function converts the input NBT into SNBT in the form of a string.
 
 execute unless data storage dnt:ram in run return run function dnt:private/snbt/no_input
+scoreboard objectives remove calc.dnt
+scoreboard objectives add calc.dnt dummy
+execute summon text_display if function dnt:private/snbt/get_parsed run return 1
 
-execute as @a[limit=1] at @s run return run function dnt:private/snbt/entity
-execute as @e[limit=1] at @s run return run function dnt:private/snbt/entity
-
-execute if loaded ~ ~ ~ summon marker run return run function dnt:private/snbt/entity_new
-
-data modify storage dnt:ram out set value "DNT ERROR: NO PARSER ENTITY"
+data modify storage dnt:ram out set value "DNT ERROR: UNKNOWN ERROR"
 return 0

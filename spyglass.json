@@ -1,6 +1,5 @@
 {
 	"env": {
-		"dataSource": "GitHub",
-		"gameVersion": "1.21.6"
+		"gameVersion": "26.1"
 	}
 }
