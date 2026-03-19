@@ -2,6 +2,8 @@
 
 This is a library that provides a couple tools to operate on snbt.
 
+**The `main` branch contains code for Minecraft 26.1+. For legacy 1.21.11-, see branch `pre-1.21.11`**
+
 * **`function dnt:concat`**:\
     Takes a list of strings from `storage dnt:ram in`, and output the contacted string in `storage dnt:ram out`\
     This will handle all the escape characters correctly, so `\`, `'`, or`"` will be contacted correctly.
