@@ -26,6 +26,10 @@ This is a library that provides a couple tools to operate on snbt.
 * **`function dnt:remove_newline`**:\
     The same as `function dnt:concat`, but it removes every `\n` in the string.
 
+* **`function dnt:remove_char`**: Same as `concat`, but it also removes all instances of char given in `storage dnt:ram arg` in the string.
+
+* **`function dnt:case/*`**: 4 functions that are same as `concat` but also applies lower or upper case. The `**_full` version also take cares of full width letters.
+
 * **`function dnt:to_json`**:\
     Takes in a nbt compound or list and convert this structure into JSON, stored as a string in `storage dnt:ram out`. Escapes/newlines/strange key names are all accounted. `1b` and `0b` will be written as `true` and `false`.\
     You should be aware that this is done by reading the string char by char. You may need to adjust `maxCommandChainLength` for super long nbt.
