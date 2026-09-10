@@ -23,6 +23,9 @@ This is a library that provides a couple tools to operate on snbt.
 * **`function dnt:get_snbt`**:\
     Takes the nbt structure stored in `storage dnt:ram in`, output its snbt as a string in `storage dnt:ram out`
 
+* **`function dnt:pretty_print`**:\
+    Takes the nbt structure stored in `storage dnt:ram in`, converts into SNBT in the form of a pretty-printed string, with new lines and indentations. May specify `storage dnt:ram args[0]` = max indent (default 12), `storage dnt:ram args[1]` = indent space count (default 2)
+
 * **`function dnt:remove_newline`**:\
     The same as `function dnt:concat`, but it removes every `\n` in the string.
 
