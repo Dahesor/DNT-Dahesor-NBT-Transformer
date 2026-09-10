@@ -3,14 +3,5 @@
         "description": "NBT Transformer Lib",
         "min_format": 101,
         "max_format": 200
-    },
-    "overlays": {
-        "entries": [
-            {
-                "directory": "dnt_overlay_26_3",
-                "min_format": 111,
-                "max_format": 200
-            }
-        ]
     }
 }
