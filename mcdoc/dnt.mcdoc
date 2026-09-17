@@ -41,6 +41,7 @@ dispatch minecraft:storage["dnt:ram"] to struct{
         b3?: string,
         b4?: string,
         escape?: string,
+        in?: [string],
     },
     temp?: any,
     holder?: any,

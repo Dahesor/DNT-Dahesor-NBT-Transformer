@@ -20,4 +20,6 @@ function dnt:private/pcat/process/remove_head
 
 # Macro Concat
 execute store result storage dnt:ram pcat.count int 1 run scoreboard players get $count calc.dnt
-function dnt:private/pcat/concat/bin/main with storage dnt:ram pcat
+data modify storage dnt:ram concat.in set value []
+data modify storage dnt:ram concat.in append from storage dnt:ram pcat.seg[].value
+function dnt:private/pcat/concat/bin/main_double with storage dnt:ram pcat

@@ -1,11 +1,11 @@
-data modify storage dnt:ram pcat.concat.0 set from storage dnt:ram pcat.seg[0].value
-data modify storage dnt:ram pcat.concat.1 set from storage dnt:ram pcat.seg[1].value
-data modify storage dnt:ram pcat.concat.2 set from storage dnt:ram pcat.seg[2].value
-data modify storage dnt:ram pcat.concat.3 set from storage dnt:ram pcat.seg[3].value
-data modify storage dnt:ram pcat.concat.4 set from storage dnt:ram pcat.seg[4].value
-data modify storage dnt:ram pcat.concat.5 set from storage dnt:ram pcat.seg[5].value
-data modify storage dnt:ram pcat.concat.6 set from storage dnt:ram pcat.seg[6].value
-data modify storage dnt:ram pcat.concat.7 set from storage dnt:ram pcat.seg[7].value
-data modify storage dnt:ram pcat.concat.8 set from storage dnt:ram pcat.seg[8].value
-data modify storage dnt:ram pcat.concat.9 set from storage dnt:ram pcat.seg[9].value
+data modify storage dnt:ram pcat.concat.0 set from storage dnt:ram concat.in[0]
+data modify storage dnt:ram pcat.concat.1 set from storage dnt:ram concat.in[1]
+data modify storage dnt:ram pcat.concat.2 set from storage dnt:ram concat.in[2]
+data modify storage dnt:ram pcat.concat.3 set from storage dnt:ram concat.in[3]
+data modify storage dnt:ram pcat.concat.4 set from storage dnt:ram concat.in[4]
+data modify storage dnt:ram pcat.concat.5 set from storage dnt:ram concat.in[5]
+data modify storage dnt:ram pcat.concat.6 set from storage dnt:ram concat.in[6]
+data modify storage dnt:ram pcat.concat.7 set from storage dnt:ram concat.in[7]
+data modify storage dnt:ram pcat.concat.8 set from storage dnt:ram concat.in[8]
+data modify storage dnt:ram pcat.concat.9 set from storage dnt:ram concat.in[9]
 function dnt:private/pcat/concat/macro/10 with storage dnt:ram pcat.concat

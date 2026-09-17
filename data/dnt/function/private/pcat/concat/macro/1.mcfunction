@@ -1,1 +1,1 @@
-$data modify storage dnt:ram out set value "$(0)"
+$data modify storage dnt:ram out set value $(q)$(0)$(q)
