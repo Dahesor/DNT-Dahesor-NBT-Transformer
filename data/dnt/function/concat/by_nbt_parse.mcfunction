@@ -15,3 +15,4 @@ data modify storage dnt:ram pcat_groups set value []
 execute summon text_display run function dnt:private/pcat/auto
 
 return 1
+

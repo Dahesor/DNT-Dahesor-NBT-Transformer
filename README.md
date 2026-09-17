@@ -8,17 +8,19 @@ This is a library that provides a couple tools to operate on snbt.
 * **`function dnt:concat`**:\
     Takes a list of strings from `storage dnt:ram in`, and output the contacted string in `storage dnt:ram out`\
     This will handle all the escape characters correctly, so `\`, `'`, or`"` will be contacted correctly.
+    There are 2 different methods to achieve this, and this function will pick the better one depends on the case.
 
+* **`function dnt:concat/by_char_read`**
+    One of the concat method. Works by reading the strings char by char.
+
+* **`function dnt:concat/by_nbt_parse`**
+    One of the concat method. Works by text component, escape, and macro black magic.
+    Better than `by_char_read` unless the total char count is small, or each string on average only contains 1 or 2 chars.
 
 * **`function dnt:concat_splited`**:\
-    This is the later step of the normal `concat` function. It takes in a list of splited strings —— which has all the escape characters isolated —— and concat them.\
-    The `concat` works by first re-construct the list:\
-        [`"Hello"`,`" single ' quote"`,`" and \\ back slash"`]\
-        into something `concat_splited` accepts:\
-        [`"Hello single "`,`"'"`,`" quote and "`,`"\\"`,`" back slash"`]\
-        then `concat_splited` concat it:\
-        `"Hello single ' quote and \\ back slash"`
-
+    It takes in a list of splited strings —— which has all the escape characters (`'`and`\`) isolated —— and concat them.\
+    For example:
+    [`"Hello single "`,`"'"`,`" quote and "`,`"\\"`,`" back slash"`]\
 
 * **`function dnt:get_snbt`**:\
     Takes the nbt structure stored in `storage dnt:ram in`, output its snbt as a string in `storage dnt:ram out`
@@ -27,11 +29,11 @@ This is a library that provides a couple tools to operate on snbt.
     Takes the nbt structure stored in `storage dnt:ram in`, converts into SNBT in the form of a pretty-printed string, with new lines and indentations. May specify `storage dnt:ram args[0]` = max indent (default 12), `storage dnt:ram args[1]` = indent space count (default 2)
 
 * **`function dnt:remove_newline`**:\
-    The same as `function dnt:concat`, but it removes every `\n` in the string.
+    The same as `concat/by_char_read`, but it removes every `\n` in the string.
 
-* **`function dnt:remove_char`**: Same as `concat`, but it also removes all instances of char given in `storage dnt:ram arg` in the string.
+* **`function dnt:remove_char`**: Same as `concat/by_char_read`, but it also removes all instances of char given in `storage dnt:ram arg` in the string.
 
-* **`function dnt:case/*`**: 4 functions that are same as `concat` but also applies lower or upper case. The `**_full` version also take cares of full width letters.
+* **`function dnt:case/*`**: 4 functions that are same as `concat/by_char_read` but also applies lower or upper case. The `**_full` version also take cares of full width letters.
 
 * **`function dnt:to_json`**:\
     Takes in a nbt compound or list and convert this structure into JSON, stored as a string in `storage dnt:ram out`. Escapes/newlines/strange key names are all accounted. `1b` and `0b` will be written as `true` and `false`.\
