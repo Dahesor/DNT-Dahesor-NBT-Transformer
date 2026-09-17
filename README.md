@@ -11,10 +11,10 @@ This is a library that provides a couple tools to operate on snbt.
     There are 2 different methods to achieve this, and this function will pick the better one depends on the case.
 
 * **`function dnt:concat/by_char_read`**
-    One of the concat method. Works by reading the strings char by char.
+    One of the concat methods. Works by reading the strings char by char.
 
 * **`function dnt:concat/by_nbt_parse`**
-    One of the concat method. Works by text component, escape, and macro black magic.
+    One of the concat methods. Works by text component, escape, and macro black magic.
     Better than `by_char_read` unless the total char count is small, or each string on average only contains 1 or 2 chars.
 
 * **`function dnt:concat_splited`**:\
