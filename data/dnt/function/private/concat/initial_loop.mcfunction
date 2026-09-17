@@ -13,7 +13,7 @@ execute if data storage dnt:ram in[3] run data modify storage dnt:ram concat.b2 
 execute if data storage dnt:ram in[5] run data modify storage dnt:ram concat.b3 set from storage dnt:ram concat.escape
 execute if data storage dnt:ram in[7] run data modify storage dnt:ram concat.b4 set from storage dnt:ram concat.escape
 
-function dnt:private/concat/conbine/slash with storage dnt:ram concat
+function dnt:private/concat/combine/slash with storage dnt:ram concat
 data remove storage dnt:ram in[0]
 data remove storage dnt:ram in[0]
 data remove storage dnt:ram in[0]
