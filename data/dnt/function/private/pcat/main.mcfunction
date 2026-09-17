@@ -1,7 +1,4 @@
-# We can deal with 256 segments at a time, so first we store anything longer in remainder
-data modify storage dnt:ram pcat set value {raw:[],seg:[],remainder:[],count:0}
-execute store result score $count calc.dnt run data get storage dnt:ram in
-execute if score $count calc.dnt matches 257.. run function dnt:private/pcat/remainder
+## main logic: concat at max 256 segments of strings
 
 # First figure out the leading quotation mark
 data modify storage dnt:ram in prepend value "!"
@@ -24,7 +21,3 @@ function dnt:private/pcat/process/remove_head
 # Macro Concat
 execute store result storage dnt:ram pcat.count int 1 run scoreboard players get $count calc.dnt
 function dnt:private/pcat/concat/bin/main with storage dnt:ram pcat
-
-# If we have a remainder, recursively process it
-execute if data storage dnt:ram pcat.remainder[0] run return run function dnt:private/pcat/recursive
-kill

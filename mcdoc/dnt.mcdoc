@@ -54,4 +54,5 @@ dispatch minecraft:storage["dnt:ram"] to struct{
     d_e?: string,
     pcat?: Pcat,
     "string"?: string,
+    pcat_groups?: [string],
 }

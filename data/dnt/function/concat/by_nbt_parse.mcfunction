@@ -10,8 +10,8 @@ execute unless data storage dnt:ram in[] run return run function dnt:private/snb
 data modify storage dnt:ram out set value ""
 scoreboard objectives remove calc.dnt
 scoreboard objectives add calc.dnt dummy
+data modify storage dnt:ram pcat_groups set value []
 
-execute summon text_display run function dnt:private/pcat/start
+execute summon text_display run function dnt:private/pcat/auto
 
 return 1
-
