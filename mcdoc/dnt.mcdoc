@@ -1,5 +1,20 @@
 use::java::util::text::Text
 
+struct Pcat{
+    seg?: [Segment],
+    raw?: [string],
+    concat?: struct{
+        [any]: string,
+    },
+    remainder?: [string],
+    count?: int,
+}
+
+struct Segment{
+    value?: string,
+    is_single?: true,
+}
+
 dispatch minecraft:storage["dnt:ram"] to struct{
     in?: any,
     out?: string,
@@ -37,4 +52,6 @@ dispatch minecraft:storage["dnt:ram"] to struct{
     },
     args?: any,
     d_e?: string,
+    pcat?: Pcat,
+    "string"?: string,
 }
