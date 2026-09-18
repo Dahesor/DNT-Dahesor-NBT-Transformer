@@ -1,0 +1,11 @@
+data modify storage dnt:ram asnbt_test.state.cases append value {name:"strings",tests:[]}
+data modify storage dnt:ram asnbt_test.state.cases[-1].tests append value {name:"empty",input:"",result:1}
+data modify storage dnt:ram asnbt_test.state.cases[-1].tests append value {name:"ascii",input:"Hello SNBT!",result:1}
+data modify storage dnt:ram asnbt_test.state.cases[-1].tests append value {name:"multilingual",input:"中文 日本語 café",result:1}
+data modify storage dnt:ram asnbt_test.state.cases[-1].tests append value {name:"emoji",input:"猫🐈🌍",result:1}
+data modify storage dnt:ram asnbt_test.state.cases[-1].tests append value {name:"single_quotes",input:"'quoted'",result:1}
+data modify storage dnt:ram asnbt_test.state.cases[-1].tests append value {name:"double_quotes",input:"\"quoted\"",result:1}
+data modify storage dnt:ram asnbt_test.state.cases[-1].tests append value {name:"mixed_quotes",input:"'a' \"b\" \\ end\\",result:1}
+data modify storage dnt:ram asnbt_test.state.cases[-1].tests append value {name:"control_characters",input:"line1\nline2\t\rend",result:1}
+data modify storage dnt:ram asnbt_test.state.cases[-1].tests append value {name:"literal_escapes",input:"\\n\\t\\r\\u0041",result:1}
+data modify storage dnt:ram asnbt_test.state.cases[-1].tests append value {name:"long",input:"abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文abc中文",result:1}

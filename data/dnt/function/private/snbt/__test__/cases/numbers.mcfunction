@@ -1,0 +1,9 @@
+data modify storage dnt:zsnbt_test state.cases append value {name:"numbers",tests:[]}
+data modify storage dnt:zsnbt_test state.cases[-1].tests append value {name:"byte",input:-128b,result:1}
+data modify storage dnt:zsnbt_test state.cases[-1].tests append value {name:"short",input:32767s,result:1}
+data modify storage dnt:zsnbt_test state.cases[-1].tests append value {name:"int",input:-2147483648,result:1}
+data modify storage dnt:zsnbt_test state.cases[-1].tests append value {name:"long",input:9223372036854775807L,result:1}
+data modify storage dnt:zsnbt_test state.cases[-1].tests append value {name:"float",input:1.25f,result:1}
+data modify storage dnt:zsnbt_test state.cases[-1].tests append value {name:"double",input:-2.5d,result:1}
+data modify storage dnt:zsnbt_test state.cases[-1].tests append value {name:"zero",input:0,result:1,expected:"0"}
+data modify storage dnt:zsnbt_test state.cases[-1].tests append value {name:"boolean",input:true,result:1}
