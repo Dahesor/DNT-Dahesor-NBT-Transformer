@@ -1,8 +1,8 @@
 data modify entity @s text set value {storage:"dnt:ram",nbt:"in",plain:false}
 data modify storage dnt:ram pt set from entity @s text.extra
-#tellraw @a {storage:"dnt:ram",nbt:"pt"}
-#tellraw @a {storage:"dnt:ram",nbt:"pt",interpret:true}
 kill
+
+execute if data storage dnt:ram pt[{color:"gray",text:"<...>"}] run return run function dnt:private/snbt/redirect
 
 data modify storage dnt:ram in set value [""]
 data modify storage dnt:ram concat set value {count:0,in:[]}

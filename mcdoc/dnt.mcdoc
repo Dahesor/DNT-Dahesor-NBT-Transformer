@@ -1,5 +1,27 @@
 use::java::util::text::Text
 
+struct Asnbt{
+    source?: any,
+    tokens?: [Text],
+    token?: Text,
+    previous?: Text,
+    parts?: [string],
+    path?: [string],
+    segments?: [string],
+    stack?: [any],
+    frame?: any,
+    failed?: boolean,
+    key_remaining?: string,
+    char?: string,
+    array?: any,
+    element?: string,
+    macro?: struct{
+        key?: string,
+        path?: string,
+        index?: int,
+    },
+}
+
 struct Pcat{
     seg?: [Segment],
     raw?: [string],
@@ -16,6 +38,8 @@ struct Segment{
 }
 
 dispatch minecraft:storage["dnt:ram"] to struct{
+    asnbt?: Asnbt,
+    asnbt_test?: any,
     in?: any,
     out?: string,
     char?: string @ 1,
@@ -45,4 +69,5 @@ dispatch minecraft:storage["dnt:ram"] to struct{
     pcat?: Pcat,
     "string"?: string,
     pcat_groups?: [string],
+    backup?: any,
 }
