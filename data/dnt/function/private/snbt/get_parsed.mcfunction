@@ -1,3 +1,5 @@
+#>@internal dnt:private/snbt/get_parsed
+
 data modify entity @s text set value {storage:"dnt:ram",nbt:"in",plain:false}
 data modify storage dnt:ram pt set from entity @s text.extra
 kill

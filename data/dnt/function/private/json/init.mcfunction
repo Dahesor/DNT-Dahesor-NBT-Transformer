@@ -1,3 +1,5 @@
+#>@internal dnt:private/json/init
+
 data modify storage dnt:ram in set from storage dnt:ram out
 scoreboard objectives add calc.dnt dummy
 data modify storage dnt:ram new_line set value "\n"

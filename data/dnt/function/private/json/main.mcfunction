@@ -1,3 +1,5 @@
+#>@private dnt:private/json/main
+
 scoreboard players set $processed calc.dnt 0
 scoreboard players set $skip_final calc.dnt 0
 execute unless function dnt:private/json/next_char run return run function dnt:private/json/joint/start

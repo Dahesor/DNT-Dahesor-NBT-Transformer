@@ -1,3 +1,5 @@
+#>@private dnt:private/snbt/colored
+
 execute if data storage dnt:ram text.extra run return run function dnt:private/snbt/colored/special_key
 
 execute if data storage dnt:ram text{color:"green"} run return run function dnt:private/snbt/new/green
