@@ -1,8 +1,9 @@
-## Input:
-##    storage dnt:ram in
-## Output:
-##    storage dnt:ram out
-## This function removes all new line characters from the input list, then concat it.
+#>@public dnt:remove_newline
+# This function removes all new line characters from the input list, then concat it.
+# @input storage dnt:ram in
+#   The list of strings to operate
+# @writes storage dnt:ram out
+#   The output string
 
 execute unless data storage dnt:ram in run return run function dnt:private/snbt/no_input
 scoreboard objectives remove calc.dnt

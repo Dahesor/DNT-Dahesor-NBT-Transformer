@@ -1,3 +1,5 @@
+#>@private dnt:private/split/this
+
 execute unless function dnt:private/split/get_next run return 1
 execute if score $process calc.dnt matches 1.. if function dnt:private/split/process run return run function dnt:private/split/this
 execute unless data storage dnt:ram {char:"'"} unless data storage dnt:ram {char:"\\"} run return run function dnt:private/split/normal_append

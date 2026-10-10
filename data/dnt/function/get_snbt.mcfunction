@@ -1,9 +1,9 @@
-## Input:
-##    storage dnt:ram in
-## Output:
-##    storage dnt:ram out
-## This function converts the input NBT into SNBT in the form of a string.
-## If it meets a truncated array, it will stop execution and call get_snbt_array_safe instead
+#>@public dnt:get_snbt
+# This function converts the input NBT into SNBT in the form of a string
+# @input storage dnt:ram in
+#   The NBT to convert
+# @writes storage dnt:ram out
+#   The output string
 
 execute unless data storage dnt:ram in run return run function dnt:private/snbt/no_input
 data modify storage dnt:ram backup set from storage dnt:ram in

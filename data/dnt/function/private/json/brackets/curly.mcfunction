@@ -1,3 +1,6 @@
+#>dnt:private/json/brackets/curly
+# @private within %parent/%parent
+
 #function dnt:private/json/indent/get
 #scoreboard players add $indent calc.dnt 1
 

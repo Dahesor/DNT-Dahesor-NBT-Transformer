@@ -1,4 +1,5 @@
-## main logic: concat at max 256 segments of strings
+#>@private dnt:private/pcat/main
+# main logic: concat at max 256 segments of strings
 
 # First figure out the leading quotation mark
 data modify storage dnt:ram in prepend value "!"

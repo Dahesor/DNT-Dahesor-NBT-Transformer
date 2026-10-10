@@ -1,9 +1,11 @@
-## Input:
-##    storage dnt:ram in
-## Output:
-##    storage dnt:ram out
-## This function concat the input list of strings into a single string. This will concat any quotation marks, backslashes, and any escape characters correctly.
-## There are 2 methods to perform the concatenation. This function will choose one of them
+#>@public dnt:concat
+# Concat the input list of strings into a single string.
+# This will concat any quotation marks, backslashes, and any escape characters correctly.
+# There are 2 methods to perform the concatenation. This function will choose one of them automatically
+# @input storage dnt:ram in
+#   The strings to concat
+# @writes storage dnt:ram out
+#   The output string
 
 scoreboard objectives add calc.dnt dummy
 execute store result score $count calc.dnt run data get storage dnt:ram in

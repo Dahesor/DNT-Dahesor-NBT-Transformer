@@ -1,3 +1,6 @@
+#>dnt:private/pretty_print/colored/simple
+# @private within %parent/%parent
+
 execute if data storage dnt:ram text.extra run return run function dnt:private/pretty_print/colored/extra
 
 data modify storage dnt:ram in append from storage dnt:ram text.text

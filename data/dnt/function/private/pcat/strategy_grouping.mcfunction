@@ -1,4 +1,5 @@
-## Grouping: concat segments in groups of 256, then recursively process the remainder
+#>@private dnt:private/pcat/strategy_grouping
+# Grouping: concat segments in groups of 256, then recursively process the remainder
 
 # We can deal with 256 segments at a time, so first we store anything longer in remainder
 data modify storage dnt:ram pcat set value {raw:[],seg:[],remainder:[],count:0}

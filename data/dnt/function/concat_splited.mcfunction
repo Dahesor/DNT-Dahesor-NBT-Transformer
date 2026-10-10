@@ -1,8 +1,11 @@
-## Input:
-##    storage dnt:ram in
-## Output:
-##    storage dnt:ram out
-## This function concat the input list of splited strings into a single string.
+#>@public dnt:concat_splited
+# This function concat the input list of splited strings into a single string.
+#
+# The input must be in the form of ["normal string", "`'` or `\\`", "normal string", "`'` or `\\`", ...]
+# @input storage dnt:ram in
+#   The strings to concat
+# @writes storage dnt:ram out
+#   The output string
 
 execute unless data storage dnt:ram in[] run return run function dnt:private/snbt/no_input
 

@@ -1,3 +1,6 @@
+#>dnt:private/json/key/check_coloum
+# @private within %parent/%parent
+
 execute if score $quoted_end calc.dnt matches 1 run scoreboard players set $key calc.dnt 0
 execute if score $quoted_end calc.dnt matches 1 run scoreboard players set $quoted calc.dnt 0
 execute if score $quoted_end calc.dnt matches 1 run scoreboard players set $quoted_end calc.dnt 0

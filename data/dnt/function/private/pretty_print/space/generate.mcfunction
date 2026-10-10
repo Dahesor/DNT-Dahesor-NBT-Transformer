@@ -1,3 +1,6 @@
+#> dnt:private/pretty_print/space/generate
+# @private within %parent/%parent
+
 scoreboard players operation indent_count calc.dnt = depth calc.dnt
 scoreboard players operation indent_count calc.dnt *= indent_space calc.dnt
 

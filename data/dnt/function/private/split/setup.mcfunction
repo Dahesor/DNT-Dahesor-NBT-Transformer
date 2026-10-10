@@ -1,3 +1,5 @@
+#>@internal dnt:private/split/setup
+
 data modify storage dnt:ram result set value []
 data modify storage dnt:ram out set value ""
 data modify storage dnt:ram concat.in set value []

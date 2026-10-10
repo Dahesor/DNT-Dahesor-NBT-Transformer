@@ -1,4 +1,6 @@
-# Read the primitive directly: no scoreboard conversion or precision loss for longs.
+#>dnt:private/asnbt/array/loop
+# Read the primitive directly
+# @private within %parent/%parent
 data remove storage dnt:ram asnbt.element
 $data modify storage dnt:ram asnbt.element set string storage dnt:ram asnbt.array[$(index)]
 execute unless data storage dnt:ram asnbt.element run return run data modify storage dnt:ram asnbt.failed set value 1b

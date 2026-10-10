@@ -1,3 +1,6 @@
+#>dnt:private/snbt/new/white
+# @private within %parent/%parent
+
 execute if data storage dnt:ram {text:"'"} run function dnt:private/snbt/new/batch
 execute if data storage dnt:ram {text:"'"} run return run data modify storage dnt:ram in append value "'"
 

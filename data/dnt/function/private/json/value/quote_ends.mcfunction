@@ -1,2 +1,5 @@
+#>dnt:private/json/value/quote_ends
+# @private within %parent/%parent
+
 execute if score $string calc.dnt matches 1 if data storage dnt:ram {char:'"'} run return run function dnt:private/json/value/string_end
 execute if score $string calc.dnt matches 3 if data storage dnt:ram {char:"'"} run return run function dnt:private/json/value/string_end_single

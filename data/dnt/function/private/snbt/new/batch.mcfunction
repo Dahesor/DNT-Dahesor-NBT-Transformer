@@ -1,3 +1,6 @@
+#>dnt:private/snbt/new/batch
+# @private within %parent/%parent
+
 scoreboard players set $count calc.dnt 0
 execute store result storage dnt:ram concat.count int 1 run data get storage dnt:ram concat.in
 execute unless data storage dnt:ram concat{count:0} run function dnt:private/pcat/concat/bin/main_single with storage dnt:ram concat

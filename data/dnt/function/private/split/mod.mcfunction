@@ -1,4 +1,5 @@
-
+#>dnt:private/split/mod
+# @internal
 function dnt:private/split/setup
 
 data modify storage dnt:ram in set from storage dnt:ram result

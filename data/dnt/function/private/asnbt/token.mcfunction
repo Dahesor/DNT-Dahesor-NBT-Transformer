@@ -1,3 +1,4 @@
+#>@private dnt:private/asnbt/token
 # Quoted keys are wrapper components with an aqua child, not string values.
 execute if data storage dnt:ram asnbt.token.extra run return run function dnt:private/asnbt/special_key
 execute if data storage dnt:ram asnbt.token{color:"aqua"} run return run function dnt:private/asnbt/key

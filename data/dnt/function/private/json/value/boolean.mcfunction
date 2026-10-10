@@ -1,3 +1,6 @@
+#>dnt:private/json/value/boolean
+# @private within %parent/%parent
+
 function dnt:private/json/peek_char
 execute if data storage dnt:ram {char:"0"} run data modify storage dnt:ram provided set value "0"
 execute if data storage dnt:ram {char:"1"} run data modify storage dnt:ram provided set value "1"

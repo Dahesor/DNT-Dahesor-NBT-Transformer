@@ -1,3 +1,5 @@
+#>@internal dnt:private/concat/get_max_layer
+
 # ceil(length / 255), without an overflowing length + 254 intermediate.
 execute if score $length calc.dnt matches ..255 run return 1
 scoreboard players remove $length calc.dnt 1

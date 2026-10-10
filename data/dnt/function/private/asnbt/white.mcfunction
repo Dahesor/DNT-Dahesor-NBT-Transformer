@@ -1,3 +1,5 @@
+#>@private dnt:private/asnbt/white
+
 execute if data storage dnt:ram asnbt{token:""} run return 1
 execute if data storage dnt:ram asnbt{token:" "} run return 1
 execute if data storage dnt:ram asnbt{token:"{"} run function dnt:private/asnbt/open

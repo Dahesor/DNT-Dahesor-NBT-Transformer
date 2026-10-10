@@ -1,3 +1,6 @@
+#>dnt:private/json/value/string_start_single
+# @private within %parent/%parent
+
 scoreboard players set $string calc.dnt 3
 scoreboard players set $processed calc.dnt 1
 scoreboard players set $skip_final calc.dnt 1

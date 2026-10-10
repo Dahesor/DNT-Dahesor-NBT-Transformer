@@ -1,3 +1,5 @@
+#>@internal dnt:private/concat/main
+
 data modify storage dnt:ram pcat set value {count:0,concat:{},remainder:[]}
 scoreboard players operation $slash_count calc.dnt = $iteration calc.dnt
 function dnt:private/concat/get_slash

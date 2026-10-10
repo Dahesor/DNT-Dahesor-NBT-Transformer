@@ -1,3 +1,5 @@
+#>@private dnt:private/concat/initial_loop
+
 execute store result score $count calc.dnt run data get storage dnt:ram in
 data modify storage dnt:ram result append from storage dnt:ram in[0]
 execute if score $count calc.dnt matches 2.. run data modify storage dnt:ram result append from storage dnt:ram concat.escape

@@ -1,3 +1,6 @@
+#>dnt:private/pretty_print/depth/remove
+# @private within %parent/%parent
+
 scoreboard players set is_array calc.dnt 0
 scoreboard players set #return calc.dnt 0
 execute if score depth calc.dnt >= max_indent calc.dnt run scoreboard players set #return calc.dnt 1

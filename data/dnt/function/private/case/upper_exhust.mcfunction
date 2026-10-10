@@ -1,3 +1,5 @@
+#>@internal dnt:private/case/upper_exhust
+
 execute if data storage dnt:ram {char:"a"} run return run data modify storage dnt:ram char set value "A"
 execute if data storage dnt:ram {char:"b"} run return run data modify storage dnt:ram char set value "B"
 execute if data storage dnt:ram {char:"c"} run return run data modify storage dnt:ram char set value "C"

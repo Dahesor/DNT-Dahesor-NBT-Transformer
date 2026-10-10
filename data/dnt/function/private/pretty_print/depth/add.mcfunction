@@ -1,3 +1,6 @@
+#>dnt:private/pretty_print/depth/add
+# @private within %parent/%parent
+
 data modify storage dnt:ram temp set value ""
 data modify storage dnt:ram temp set from storage dnt:ram pt[1]
 execute if data storage dnt:ram {text:"{",temp:"}"} run return run function dnt:private/pretty_print/depth/skip

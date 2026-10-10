@@ -1,3 +1,6 @@
+#>dnt:private/json/key/quoted_single
+# @private within %parent/%parent
+
 data modify storage dnt:ram provided set value '"'
 function dnt:private/json/insert_provided with storage dnt:ram
 scoreboard players set $key calc.dnt 2

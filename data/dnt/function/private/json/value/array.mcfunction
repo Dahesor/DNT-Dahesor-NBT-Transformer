@@ -1,3 +1,6 @@
+#>dnt:private/json/value/array
+# @private within %parent/%parent
+
 data modify storage dnt:ram temp set value ""
 execute unless score $length calc.dnt matches 2.. run return fail
 data modify storage dnt:ram temp set string storage dnt:ram in 1 2

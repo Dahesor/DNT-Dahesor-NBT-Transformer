@@ -1,3 +1,6 @@
+#>dnt:private/json/key/quote_end
+# @private within %parent/%parent
+
 execute if score $quoted calc.dnt matches 1.. run return run function dnt:private/json/key/check_coloum
 data modify storage dnt:ram provided set value '"'
 function dnt:private/json/insert_provided with storage dnt:ram

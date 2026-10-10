@@ -1,2 +1,5 @@
+#>dnt:private/pcat/classify/__insert_single
+# @private within dnt:private
+
 $data modify storage dnt:ram pcat.seg[-1].value set value '\'$(string)'
 data modify storage dnt:ram pcat.seg[-1].is_single set value true

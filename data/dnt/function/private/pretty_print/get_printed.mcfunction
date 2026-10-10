@@ -1,3 +1,5 @@
+#>@internal dnt:private/pretty_print/get_printed
+
 data modify entity @s text set value {storage:"dnt:ram",nbt:"in"}
 data modify storage dnt:ram pt set from entity @s text.extra
 kill

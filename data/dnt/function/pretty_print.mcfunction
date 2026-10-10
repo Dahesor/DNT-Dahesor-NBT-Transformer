@@ -1,11 +1,14 @@
-## Input:
-##    storage dnt:ram in
-##    storage dnt:ram args
-## Output:
-##    storage dnt:ram out
-## This function converts the input NBT into SNBT in the form of a pretty-printed string, with new lines and indentations.
-## args[0] = max indent (default 12)
-## args[1] = indent space count (default 2)
+#>@public dnt:pretty_print
+# This function converts the input NBT into SNBT in the form of a pretty-printed string,
+# with new lines and indentations.
+# @input storage dnt:ram in
+#   The NBT to pretty-print
+# @input storage dnt:ram args[0]
+#   *Optional*. The maximum indent for pretty-printing (default 12)
+# @input storage dnt:ram args[1]
+#   *Optional*. The indent space count (default 2)
+# @writes storage dnt:ram out
+#   The output string
 
 execute unless data storage dnt:ram in run return run function dnt:private/snbt/no_input
 scoreboard objectives remove calc.dnt

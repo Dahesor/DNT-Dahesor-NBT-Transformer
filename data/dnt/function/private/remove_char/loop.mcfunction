@@ -1,3 +1,5 @@
+#>@private dnt:private/remove_char/loop
+
 execute unless data storage dnt:ram holder[0] run return fail
 scoreboard players set $changed calc.dnt 0
 execute store result score $changed calc.dnt run data modify storage dnt:ram holder[0] set from storage dnt:ram char

@@ -1,3 +1,6 @@
+#>dnt:private/json/value/numeric
+# @private within %parent/%parent
+
 execute if score $processed calc.dnt matches 1 run return fail
 execute unless data storage dnt:ram {char:"-"} \
         unless data storage dnt:ram {char:"0"} \

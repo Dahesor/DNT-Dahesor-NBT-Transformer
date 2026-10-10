@@ -1,4 +1,5 @@
-## Biting: concat firts 256, then prepend the result to the remainder
+#>@private dnt:private/pcat/strategy_biting
+# Biting: concat firts 256, then prepend the result to the remainder
 
 # We can deal with 256 segments at a time, so first we store anything longer in remainder
 data modify storage dnt:ram pcat set value {raw:[],seg:[],remainder:[],count:0}

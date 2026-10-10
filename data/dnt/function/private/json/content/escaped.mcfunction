@@ -1,3 +1,6 @@
+#>dnt:private/json/content/escaped
+# @private within %parent/%parent
+
 scoreboard players set $escape calc.dnt 0
 
 execute if data storage dnt:ram {char:"\\"} run function dnt:private/json/content/slash_insert

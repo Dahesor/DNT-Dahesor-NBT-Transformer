@@ -1,3 +1,5 @@
+#>@internal dnt:private/asnbt/walk
+
 execute unless data storage dnt:ram asnbt.tokens[0] run return 1
 execute if data storage dnt:ram asnbt{failed:1b} run return 0
 data modify storage dnt:ram asnbt.token set from storage dnt:ram asnbt.tokens[0]

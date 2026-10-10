@@ -1,3 +1,6 @@
+#>dnt:private/pcat/process/remove_head
+# @private within %parent/%parent
+
 execute if score $this calc.dnt matches ..0 run return 1
 scoreboard players remove $this calc.dnt 1
 

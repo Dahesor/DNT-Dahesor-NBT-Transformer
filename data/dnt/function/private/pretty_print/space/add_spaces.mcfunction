@@ -1,3 +1,5 @@
+#>@private dnt:private/pretty_print/space/add_spaces
+
 $data modify storage dnt:ram temp.res set value "$(res)$(space)"
 
 scoreboard players remove indent_count calc.dnt 1

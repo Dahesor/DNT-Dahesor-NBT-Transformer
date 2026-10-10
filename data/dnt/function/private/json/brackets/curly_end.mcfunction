@@ -1,3 +1,6 @@
+#>dnt:private/json/brackets/curly_end
+# @private within %parent/%parent
+
 #scoreboard players remove $indent calc.dnt 1
 data remove storage dnt:ram brackets[-1]
 scoreboard players set $key calc.dnt 0

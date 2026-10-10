@@ -1,3 +1,5 @@
+#>@private dnt:private/pretty_print/analyze_parts
+
 execute unless data storage dnt:ram pt[0] run return 1
 
 data modify storage dnt:ram text set from storage dnt:ram pt[0]

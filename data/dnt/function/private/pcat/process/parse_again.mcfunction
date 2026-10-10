@@ -1,3 +1,6 @@
+#>dnt:private/pcat/process/parse_again
+# @private within %parent/%parent
+
 data modify storage dnt:ram pcat.raw set value ["!"]
 data modify storage dnt:ram pcat.raw append from storage dnt:ram pcat.seg[{is_single:true}].value
 

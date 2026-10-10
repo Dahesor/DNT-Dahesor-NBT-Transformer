@@ -1,9 +1,12 @@
-## Input:
-##    storage dnt:ram in
-## Output:
-##    storage dnt:ram out
-## This function converts the input NBT into SNBT in the form of a string.
-## This function uses the safe method directly, instead of quitting and turning to a safe method mid-execution.
+#>@public dnt:get_snbt_array_safe
+# This function converts the input NBT into SNBT in the form of a string.
+# Minecraft truncates the representation of large arrays in SNBT, like `[I; 1,2,3,4,... 1024]` -> `[I; 1,2,3,4,...<...>]`.
+# If this happens, the normal version of this function will terminate and call this safe function instead,
+# which has the ability to handle large arrays without truncation.
+# @input storage dnt:ram in
+#   The NBT to convert
+# @writes storage dnt:ram out
+#   The output string
 
 execute unless data storage dnt:ram in run return run function dnt:private/asnbt/no_input
 data modify storage dnt:ram asnbt set value {parts:[],path:[],segments:[],stack:[],failed:0b}

@@ -1,3 +1,4 @@
+#>@private dnt:private/asnbt/special_key
 # Preserve the original SNBT spelling, then decode it for the raw path list.
 data modify storage dnt:ram asnbt.parts append from storage dnt:ram asnbt.token.text
 data modify storage dnt:ram asnbt.parts append from storage dnt:ram asnbt.token.extra[0].text

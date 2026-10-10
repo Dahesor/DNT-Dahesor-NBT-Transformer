@@ -1,5 +1,7 @@
+#>dnt:private/asnbt/array/expand
 # The rendered prefix and its trailing comma are already in parts.
 # Resolve paths against the saved input in dnt:ram asnbt.source.
+# @private within %parent/%parent
 execute unless data storage dnt:ram asnbt.frame{kind:"array"} run return run data modify storage dnt:ram asnbt.failed set value 1b
 data modify storage dnt:ram in set value ["asnbt.source"]
 data modify storage dnt:ram in append from storage dnt:ram asnbt.segments[]

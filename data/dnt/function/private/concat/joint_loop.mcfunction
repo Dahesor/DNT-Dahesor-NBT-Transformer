@@ -1,3 +1,5 @@
+#>@private dnt:private/concat/joint_loop
+
 # Clear the remainder for every batch, including the final batch of a layer.
 data modify storage dnt:ram pcat.remainder set value []
 execute store result score $count calc.dnt run data get storage dnt:ram concat.in

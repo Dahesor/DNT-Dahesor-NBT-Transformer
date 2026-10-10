@@ -1,3 +1,6 @@
+#>dnt:private/json/key/quote
+# @private within %parent/%parent
+
 execute if data storage dnt:ram {char:'"'} run return run function dnt:private/json/key/quoted
 execute if data storage dnt:ram {char:"'"} run return run function dnt:private/json/key/quoted_single
 data modify storage dnt:ram provided set value '"'

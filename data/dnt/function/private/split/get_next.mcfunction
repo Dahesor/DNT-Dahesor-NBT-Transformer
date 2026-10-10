@@ -1,3 +1,5 @@
+#>@private dnt:private/split/get_next
+
 execute unless score $length calc.dnt matches 1.. run return fail
 data modify storage dnt:ram char set string storage dnt:ram temp 0 1
 data modify storage dnt:ram temp set string storage dnt:ram temp 1
